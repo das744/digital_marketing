@@ -1,0 +1,105 @@
+.services {
+  padding: 60px 20px;
+  /* background: #f9f9f9; */
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.heading {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 5rem;
+
+}
+
+.heading h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.heading p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.serviceGrid {
+  flex: 3 1 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.serviceBox {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.serviceBox:nth-child(1){
+  border:1px solid #222;
+
+}
+.serviceBox:hover {
+  transform: translateY(-5px);
+}
+.serviceBox:hover .icon {
+   background-color: var( --primary);
+  color: #fff;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: var( --primary);
+  color: #fff;
+}
+
+.serviceBox h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.serviceBox p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .heading {
+    max-width: 100%;
+    text-align: center;
+  }
+}
