@@ -60,7 +60,7 @@ export default function Quote() {
         {/* <div className={styles.imageContainer}>
           <img src={quoteImg} alt="Guitar" className={styles.wideImage} />
         </div> */}
-        <h2 className={styles.heading}>Drive More Traffic. Get More  <span>L </span>eads.  <span>I </span>ncrease  <span> S</span>ales. </h2>
+        <h2 className={styles.heading}>Drive More Traffic. Get More  <span>L</span>eads.  <span>I</span>ncrease  <span> S</span>ales. </h2>
         <p className={styles.text}>We help businesses dominate search results and grow their digital presence. Our SEO experts use 
           cutting-edge strategies to optimize your website, improve rankings, and drive targeted traffic that converts.</p>
         <div className={styles.socialIcons}>
